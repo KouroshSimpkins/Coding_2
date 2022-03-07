@@ -69,6 +69,12 @@ def main():
     # Right shift the second number
     print(f"Right shift: {bin(int(num_2) >> int(num))[2:]}")
 
+    # Print the decimal representation of a left shift
+    print(f"Left shift integer: {int(num) << int(num_2)}")
+
+    # Print the decimal representation of a right shift
+    print(f"Right shift integer: {int(num) >> int(num_2)}")
+
 
 if __name__ == "__main__":
     main()
