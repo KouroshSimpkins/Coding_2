@@ -21,7 +21,7 @@ def get_not_val(val):
     """Return the not value of a letter"""
     binary = bin(get_binary(val))[2:]
     not_binary = []
-    for i in range(len(binary)):
+    for i in range(len(binary)): # pylint: disable=consider-using-enumerate
         if binary[i] == "0":
             not_binary.append("1")
         else:
@@ -38,7 +38,7 @@ def main():
     """Perform bitwise operators on an input string"""
     word = split_string()
     not_word = []
-    for i in range(len(word)):
+    for i in range(len(word)): # pylint: disable=consider-using-enumerate
         not_word.append(binary_to_string(get_not_val(word[i])))
 
     print(not_word)
